@@ -4,7 +4,7 @@ import random
 #  genrate random no between 1 to 7 
 # according to random no path is choosen 
 # if 1 then a elif 2 then .....
-random_no=random.randint(1,7)
+random_no=random.randint(1,8)
 if random_no==1:
     a=[[1,0,0,2,2,2],[2,2,0,0,0,2],[2,2,2,2,0,0]]
 elif random_no==2:
@@ -19,6 +19,9 @@ elif random_no== 6:
     a=[[1,2,0,0,0,2],[0,2,0,2,0,2],[0,0,0,2,0,0]]
 elif random_no== 7:
     a=[[1,2,0,0,0,0],[0,0,0,2,0,0],[0,0,0,0,0,2]]
+elif random_no==8:
+    #l3-s2,4-l2-d2-l2-d4-s30,3-l2
+    a=[[1,0,0,2,2,2],[2,2,2,0,0,2],[2,0,2,2,0,2],[0,0,0,0,0,2],[2,2,2,2,0,2]]
 # intialize a variable  step use furthure in code.
 step=0
 # convert 2-d path into 2-d path array
@@ -176,6 +179,10 @@ for command in code:
                         return 2,(int(swap_position[index])-12)-1
                     elif swap_position[index]>=(len(path[0])*3)+1 and swap_position[index]<=len(path[0])*4:
                         return 3,(int(swap_position[index])-18)-1
+                    elif swap_position[index]>=(len(path[0])*4)+1 and swap_position[index]<=len(path[0])*5:
+                        return 4,(int(swap_position[index])-24)-1
+                    elif swap_position[index]>=(len(path[0])*5)+1 and swap_position[index]<=len(path[0])*6:
+                        return 5,(int(swap_position[index])-30)-1
                     else:
                         return 0,0
                 # pass the index and get the row ans colum postion for swap 
@@ -190,7 +197,7 @@ for command in code:
                     break
                 # swap the postions 
                 else:
-                    path[row_1][colum_1],path[row_2][colum_2]=path[row_2][colum_2],path[row_1][colum_2]
+                    path[row_1][colum_1],path[row_2][colum_2]=path[row_2][colum_2],path[row_1][colum_1]
              else:
                 print(f'Invalid command lenght {len(command}')
                 break
