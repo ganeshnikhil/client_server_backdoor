@@ -146,7 +146,7 @@ for command in code:
          # s means swap 
         elif command[0]=='s':
             # if lenght of command is start with three and max lenght 5 : s17,16 . s2,5 . s12,2 . if valid then 
-            if len(command)==3 or len(command)==4 or len(command)==5:
+            if len(command)==4 or len(command)==5 or len(command)==6:
                 # remove teh s from command [1: len(command)]then split the command by ',' and put into the list swap_postions 
                 swap_position=list(command[1:len(command)].split(','))
                 # loop through the swap_postion list and check if value is numeric if true then convert into int 
@@ -221,19 +221,20 @@ for command in code:
         print(path)
      # if exception ocuur print the exception
     except Exception as e:
+        # print the exception....
         print(e)
         print(f'Problem in command:{command}')
         print("Error.. . Bug in the code...")    
          
- # len of wrong command is not 0 then print the wrong command 
+ # len of wrong_command list is not 0 then print the wrong command 
 if len(wrong_command)!=0:
     for error in wrong_command:
         print(f'Problem in command: {error}')
 print('\n')
-# print the complete exceution of cmmand on path once
+# print the complete exceution of command on path once
 print('Complete Exceution Of Command Result:')
 print(path)
-# if the postion of user means '1' on these positio it means you done it hurry ...
+# if the postion of user means '1' on these position it means you done it hurry ...
 if path[len(path)-1][0]==1 or path[len(path)-1][len(path[0])-1]==1:
     print(f'Congratulation you done it :{user_code}')
 else:
