@@ -198,8 +198,8 @@ for command in code:
                 # swap the postions 
                 else:
                     path[row_1][colum_1],path[row_2][colum_2]=path[row_2][colum_2],path[row_1][colum_1]
-             else:
-                print(f'Invalid command lenght {len(command}')
+            else:
+                print(f'Invalid command lenght {len(command)}')
                 break
          # elif command[0] is i means inverse       
         elif command[0]=='i':
