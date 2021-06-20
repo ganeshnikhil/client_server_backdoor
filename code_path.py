@@ -185,7 +185,7 @@ for command in code:
                 row=find_user()[0]
                 colum=find_user()[1]
                 # check the condition for it 
-                if row_1== row and colum_1==colum or row_2== row or colum_2==colum:
+                if row_1== row and colum_1==colum or row_2== row and colum_2==colum:
                     print(f'Invalid swap position {swap_position[0]}:{swap_position[1]}')
                     break
                 # swap the postions 
