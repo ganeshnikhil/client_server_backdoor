@@ -13,3 +13,4 @@ def listdirs(rootdir):
 rootdir = '/users'
 listdirs(rootdir)
 file.close()
+#using this program you can mine all file path in your system
