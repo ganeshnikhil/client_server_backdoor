@@ -1,0 +1,9 @@
+ilesystem     512-blocks      Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk1s1s1  976490576  29760376 664995144     5%  501138 3324975720    0%   /
+devfs                 375       375         0   100%     650          0  100%   /dev
+/dev/disk1s5    976490576   6291496 664995144     1%       3 3324975720    0%   /System/Volumes/VM
+/dev/disk1s3    976490576    970528 664995144     1%    3305 3324975720    0%   /System/Volumes/Preboot
+/dev/disk1s6    976490576      8592 664995144     1%      18 3324975720    0%   /System/Volumes/Update
+/dev/disk1s2    976490576 271968296 664995144    30% 2004754 3324975720    0%   /System/Volumes/Data
+map auto_home           0         0         0   100%       0          0  100%   /System/Volumes/Data/home
+kartiksingh@Kartiks-MacBook-Air encrypted %
