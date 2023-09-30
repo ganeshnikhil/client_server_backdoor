@@ -114,7 +114,7 @@ def end_connection(conn):
 
 if __name__=='__main__':
    PORT = 8989
-   HOST=socket.gethostname()
+   HOST=socket.gethostname() #enter the ip adress
    #HOST=open("ip.txt","r").read()
    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
       s.bind((HOST, PORT))
