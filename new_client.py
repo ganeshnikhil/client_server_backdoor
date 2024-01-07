@@ -207,7 +207,6 @@ if __name__ == "__main__":
    # hostname = socket.gethostname()
    ## getting the IP address using socket.gethostbyname() method
    #host = socket.gethostbyname(hostname)
-   #host="192.168.0.104"
    #host=socket.gethostname()
    host=open("ip.txt","r").read()
    port=8989
